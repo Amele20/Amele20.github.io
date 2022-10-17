@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        legend
+        { 
+          color: darkcyan;
+        }
+        <h1 {color: darkcyan; font-size: 14px;}
+        
+        
+    </style>
+<form action="https://html-reponse.usertest.fr/reponse.php" method="post">
+        
+          <u><h1> Formulaire</h1></u>
+   <fieldset>
+            <legend><em>Informations personnelles </legend></em>
+            <p>
+            Genre:
+            <input type="radio" name="genre" id="genre_1" value="1"/>
+            <label for="genre_1">M</label>
+            <input type="radio" name="genre" id="genre_2" value="2" checked/>
+            <label for="genre_2">F</label>
+            
+          </br>
+        
+               
+         </p>
+         <p>
+            <label for="age">Classe d'age:</label>
+             <select id="age" name="age">
+                <option value="m20" selected="selected">Moins de 20 ans</option>
+                <option value="2039">20 à 39 ans</option>
+                <option value="4059">40 à 59 ans</option>
+                <option value="p60">60 ans ou plus</option></br>
+            </select>
+             </br>
+        
+            <label for="gsp">Groupe socioprofessionel:</label>
+            <select id="gsp" name="gsp">
+                <option value="agri">Agriculteurs exploitants(agri)</option>
+                <option value="arti">Artisans, commerçants et chefs d’entreprise(arti)</option>
+                <option value="cadr">Cadres et professions intellectuelles supérieures(cadr)</option>
+                <option value="proi">Professions intermédiaires(proi)</option>
+                <option value="empl">Employés(empl)</option>
+                <option value="ouvr">Ouvriers(ouvr)</option>
+                <option value="retr">Retraités(retr)</option>
+                <option value="sansac">Autres personnes sans activité professionnelle(sansac)</option>
+             </br></select></br>
+        
+            
+             </br><label for="cpostal">Code postal:</label>
+             <input type="text" size="5" maxlength="5" name="cpostal" placeholder="49000"/>
+            </select>
+     </fieldset>
+         </br>
+     <fieldset>
+            <legend><em>Informations sur les trajets domicile-travail</legend></em></br>
+            <label for="vehicule">Véhicule principal pour les trajets domicile-travail:</label>
+            <select id="vehicule" name="vehicule">
+                <option value="pieton">Aucun</option>
+                <option value="velo">Bicyclette</option>
+                <option value="deuxroues">Deux roues motorisé</option>
+                <option value="auto">Automobile</option>
+                <option value="tcommun">Transports en commun</option>
+                </select></br>
+                <label for ="distance:">Distance domicile-travail:</label>
+         <select name="distance">
+                    <option value="m1">Inférieure à 1 km </option>
+                    <option value="15">De 1 à 5 km </option>
+                    <option value="515">De 5 à 15 km </option>
+                    <option value="p15">15 km ou plus</option>
+         </select>
+    </fieldset>
+     <fieldset>
+            <legend><em>Axes d'amélioration des transports en commun</em></legend></br>
+            Cocher les principaux obstacles à la mobilité en transport en commun (plusieurs réponses possibles)</br>
+            <div>
+                <input type="checkbox" name="tem">
+                <label for="tem">Temps de trajet trop long</label>
+              
+                <input type="checkbox"  name="cor">
+                <label for="cor">Correspondances inadaptées</label>
+              
+                <input type="checkbox"  name="tar" value="Tarifs trop élevés">
+                <label for="tar">Tarifs trop élevés</label>
+            </div>
+            <div>
+                <input type="checkbox" name="res">
+               <label for="res">Respect des horaires</label>
+             
+                <input type="checkbox"  name="tro">
+                <label for="tro">Trop forte influence</label>
+            
+                <input type="checkbox"  name="des" >
+                <label for="des">Desserte insufissante</label>
+              </div>
+            <div>
+              <input type="checkbox" name="amp" >
+              <label for="amp">Amplitude horaire trop limitée</label>
+            
+            
+              <input type="checkbox"  name="con">
+              <label for="con">Confort insuffisant</label>
+             </div></br>
+             <label for="msg"><u>Remarques ou observations sur le réseau de transports en commun:</u></label></br></p>
+            <textarea id="remarques" name="remarques"></textarea></br>
+
+    </fieldset>
+
+   <fieldset
+            
+         <legend> Merci de votre participation !</legend></br>
+            
+          <input type="submit" value="Soumettre">
+          <input type="reset" value="Réinitialiser"
+         </fieldset>
+          </form> 
+</body>
+</html>
