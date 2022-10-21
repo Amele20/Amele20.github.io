@@ -1,0 +1,115 @@
+body{
+    background-image: url("soleil.png");
+}
+h1{color: rgb(248, 244, 250);
+}
+u {
+    text-decoration-line: underline;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+section{
+
+    background-image: url("soleil.png") no-repeat;
+    background-size: 100%;
+    height: 100%;
+}
+body{
+    font-family:system-ui, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+nav{
+    background-color: rgb(211, 156, 188);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 13px 17px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+a.active,a:hover{
+    background-color: rgb(232, 181, 218);
+    transition: .5s;
+
+}
+.chekbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: mediumblue;
+        top: 80px;
+        left: 0;
+        text-align: center;
+
+    }
+    {
+        nav ul li{
+            display: block;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a:hover,a.active{
+            background-color: none;
+            color: tomato;
+        }
+        #check:checked ~ ul~{
+            left: 0;
+        }
+
+    }
+}
